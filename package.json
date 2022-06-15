@@ -1,0 +1,22 @@
+{
+  "name": "interview",
+  "description": "每日一题。",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developer-plus/interview.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/developer-plus/interview/issues"
+  },
+  "homepage": "https://github.com/developer-plus/interview#readme",
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.2",
+    "vue": "^3.2.37"
+  }
+}
