@@ -1,25 +1,24 @@
 {
-  "name": "interview",
-  "description": "每日一题。",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/developer-plus/interview.git"
-  },
+  "private": true,
+  "packageManager": "pnpm@7.1.6",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "serve": "vitepress serve",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "lint-staged",
+    "lint:check": "eslint .",
+    "prepare": "husky install"
   },
-  "bugs": {
-    "url": "https://github.com/developer-plus/interview/issues"
+  "lint-staged": {
+    "*": "eslint --fix"
   },
-  "homepage": "https://github.com/developer-plus/interview#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@developer-plus/eslint-config": "^0.1.1",
     "eslint": "^8.17.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
     "typescript": "^4.7.3",
     "vitepress": "1.0.0-alpha.2",
     "vue": "^3.2.37"
