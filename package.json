@@ -9,9 +9,6 @@
     "lint:check": "eslint .",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "*": "eslint --fix"
-  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
@@ -22,5 +19,8 @@
     "typescript": "^4.7.3",
     "vitepress": "1.0.0-alpha.2",
     "vue": "^3.2.37"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,ts,tsx,json,md}": "eslint --fix"
   }
 }
